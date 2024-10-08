@@ -3,7 +3,7 @@
 
 Submitted by: Tony Vazquez
 
-BeReal is an app that ... [TODO] 
+BeReal is an app that allows you to post pictures with captions on a feed, similar to instagram. You can create and account, login, and logout.
 
 Time spent: 6 hours spent in total
 
