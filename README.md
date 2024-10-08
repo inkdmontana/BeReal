@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # BeReal
 # Project 2 - BeReal
 
@@ -56,3 +57,8 @@ I had issues with the password when creating a new user. The auto correct and ic
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+=======
+# ios102-lab5-spring23
+
+![instaparse_walkthrough_1_xtra_small](https://user-images.githubusercontent.com/11927517/199710313-700aef85-ba89-427c-aa07-f89f0fdfdbbe.gif)
+>>>>>>> be14d4d (Initial commit)
