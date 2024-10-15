@@ -1,10 +1,10 @@
 <<<<<<< HEAD
 # BeReal
-# Project 2 - BeReal
+# Project 3 - BeReal
 
 Submitted by: Tony Vazquez
 
-BeReal is an app that allows you to post pictures with captions on a feed, similar to instagram. You can create and account, login, and logout.
+BeReal is an app that allows you to post pictures with captions on a feed, similar to instagram. You can create and account, login, and logout. Posting images shows location longitude/latitude and date and time posted
 
 Time spent: 6 hours spent in total
 
@@ -12,36 +12,30 @@ Time spent: 6 hours spent in total
 
 The following **required** functionality is completed:
 
-- [x] Users see an app icon in the home screen and a styled launch screen.
-- [x] User can register a new account
-- [x] User can log in with newly created account
-- [x] App has a feed of posts when user logs in
-- [x] User can upload a new post which takes in a picture from photo library and an optional caption	
-- [x] User is able to logout	
+- [x] User can launch camera to take photo instead of photo library
+  - [x] Users without iPhones to demo this feature can manually add unique photos to their simulator's Photos app
+- [x] Users are not able to see other users’ photos until they upload their own.
+- [ ] Users can intereact with posts via comments, comments will have user data such as username and name
+- [x] Posts have a time and location attached to them
+- [x] Users are not able to see other photos until they post their own (within 24 hours)	
  
 The following **optional** features are implemented:
 
-- [ ] Users can pull to refresh their feed and see a loading indicator
-- [ ] Users can infinite-scroll in their feed to see past the 10 most recent photos
-- [ ] Users can see location and time of photo upload in the feed	
-- [x] User stays logged in when app is closed and open again	
-
+- [ ] User receive notifcation when it is time to post
 
 The following **additional** features are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality!
 
 ## Video Walkthrough
-<div>
-    <a href="https://www.loom.com/share/dbfca768ae5c49b3b7cc8b1a4fda8e15">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/dbfca768ae5c49b3b7cc8b1a4fda8e15-bb96c80a138f3ef5-full-play.gif">
-    </a>
-  </div>
+
+Here is a reminder on how to embed Loom videos on GitHub. Feel free to remove this reminder once you upload your README. 
+
+[Guide]](https://www.youtube.com/watch?v=GA92eKlYio4) .
 
 ## Notes
 
-I had issues with the password when creating a new user. The auto correct and icloud keychain would activate. I had to figure out how to bypass it.
-
+I had no idea how to do the comments section. And i had no idea why i couldnt get the meta data to display a city and state instead of latitude and longitude 
 ## License
 
     Copyright 2024 Tony Vazquez
