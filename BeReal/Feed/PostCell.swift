@@ -15,6 +15,8 @@ class PostCell: UITableViewCell {
     @IBOutlet private weak var postImageView: UIImageView!
     @IBOutlet private weak var captionLabel: UILabel!
     @IBOutlet private weak var dateLabel: UILabel!
+    @IBOutlet weak var blurView: UIVisualEffectView!
+    @IBOutlet weak var locationLabel: UILabel! // Added for displaying location
 
     private var imageDataRequest: DataRequest?
 
@@ -41,12 +43,29 @@ class PostCell: UITableViewCell {
             }
         }
 
-        // Caption
-        captionLabel.text = post.caption
+        // Show/hide the blur view based on post dates
+        if let currentUser = User.current,
+           let lastPostedDate = currentUser.lastPostedDate,
+           let postCreatedDate = post.createdAt,
+           let diffHours = Calendar.current.dateComponents([.hour], from: postCreatedDate, to: lastPostedDate).hour {
 
-        // Date
-        if let date = post.createdAt {
-            dateLabel.text = DateFormatter.postFormatter.string(from: date)
+            // Hide the blur view if the post was created within 24 hours of the current user's last post
+            blurView.isHidden = abs(diffHours) < 24
+        } else {
+            // Default to blur view if dates can't be computed
+            blurView.isHidden = false
+        }
+
+        // Show location if available
+        if let location = post.location {
+            locationLabel.text = "Location: Lat \(location.latitude), Lon \(location.longitude)"
+        } else {
+            locationLabel.text = "Location not available"
+        }
+
+        // Show post creation date and time
+        if let createdAt = post.createdAt {
+            dateLabel.text = DateFormatter.localizedString(from: createdAt, dateStyle: .short, timeStyle: .short)
         }
     }
 

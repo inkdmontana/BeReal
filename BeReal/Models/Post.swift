@@ -20,4 +20,6 @@ struct Post: ParseObject {
     var caption: String?
     var user: User?
     var imageFile: ParseFile?
+    var location: ParseGeoPoint? // Added to track the location
+
 }

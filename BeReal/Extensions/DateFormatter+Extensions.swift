@@ -1,10 +1,9 @@
 //
 //  DateFormatter+Extensions.swift
-//  lab-insta-parse
+//  BeReal
 //
-//  Created by Charlie Hieger on 11/3/22.
+//  Created by Tony Vazquez on 10/11/24.
 //
-
 import Foundation
 
 extension DateFormatter {
